@@ -3,7 +3,7 @@
 @{
 }
 <h1>Product List</h1>
-<a class="btn btn-primary btn-sm" href="/clients/Create">New Products</a>
+<a class="btn btn-primary btn-sm" asp-page="/clients/Create">New Products</a>
 <table class="table">
     <thead>
         <tr>
@@ -27,8 +27,8 @@
                 <td>@item.product_quantity</td>
                 <td>@item.product_price</td>
                 <td>
-                    <a class="btn btn-success btn-sm" asp-page="/Edit/">Edit</a>
-                    <a class="btn btn-danger btn-sm" href="/clients/Delete?id=">Delete</a>
+                    <a class="btn btn-success btn-sm" asp-page="/clients/Edit">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/clients/Delete">Delete</a>
                 </td>
             </tr>
         }
