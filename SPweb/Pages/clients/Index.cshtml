@@ -1,0 +1,38 @@
+﻿@page
+@model SPweb.Pages.clients.IndexModel
+@{
+}
+<h1>Product List</h1>
+<a class="btn btn-primary btn-sm" href="/clients/Create">New Products</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Product Category</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Model</th>
+            <th scope="col">Product Quantity</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.listProducts)
+        {
+            <tr>
+                <td>@item.add_date</td>
+                <td>@item.product_category</td>
+                <td>@item.product_name</td>
+                <td>@item.product_model</td>
+                <td>@item.product_quantity</td>
+                <td>@item.product_price</td>
+                <td>
+                    <a class="btn btn-success btn-sm" asp-page="/Edit/">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/clients/Delete?id=">Delete</a>
+                </td>
+            </tr>
+        }
+        
+        
+    </tbody>
+</table>
