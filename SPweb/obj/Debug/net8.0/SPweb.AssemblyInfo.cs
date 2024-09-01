@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SPweb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52e6481cf4fc7d1d1b9ff6c744856ad1c14365d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("SPweb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SPweb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
